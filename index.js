@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const fetchEmpleados = async () => {
         try {
             const respuesta = await axios.get(`https://empresa-node-api.vercel.app/empleados`)
-            console.log(respuesta.data);
             const empleados = respuesta.data
 
             // limpiar la tabla antes de agregar los nuevos datos
@@ -84,8 +83,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // funcion para formatear fecha
     function formatearFecha(f) {
-
-        console.log(f)
         if (f == null || f == "0000-00-00") return ''
 
         // Create a Date object from the ISO string
