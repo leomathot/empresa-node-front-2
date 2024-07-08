@@ -2,7 +2,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main  # replace with your default branch if not 'main'
+      - main
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -19,7 +19,7 @@ jobs:
         run: npm ci
       
       - name: Build
-        run: npm run build  # make sure this script builds your project and outputs to 'dist'
+        run: npm run build
       
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
