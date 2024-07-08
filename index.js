@@ -1,3 +1,5 @@
+const axios = require('axios')
+
 /* DOMContentLoaded */
 /* evento DOMContentLoaded para asegurar que el script se ejecute después de que el DOM se haya cargado completamente. */
 document.addEventListener("DOMContentLoaded", () => {

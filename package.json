@@ -1,0 +1,19 @@
+{
+  "name": "empresa-node-front-2",
+  "version": "1.0.0",
+  "description": "Para GitHub pages: https://leomathot.github.io/empresa-node-front-2/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}

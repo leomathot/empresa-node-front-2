@@ -1,3 +1,5 @@
+const axios = require('axios')
+
 document.addEventListener("DOMContentLoaded", () => {
     // obtener el id del empleado de la URL
     const urlParams = new URLSearchParams(window.location.search)
