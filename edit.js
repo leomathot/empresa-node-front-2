@@ -1,4 +1,4 @@
-const axios = require('axios')
+// const axios = require('axios')
 
 document.addEventListener("DOMContentLoaded", () => {
     // obtener el id del empleado de la URL
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Convierte la cadena de texto empleado.fecha a un objeto Date usando la función Date.parse().
     // Formatea el objeto Date a una cadena en formato ISO usando el método toISOString() y luego extrae los primeros 10 caracteres, que corresponden a la fecha en formato AAAA-MM-DD, usando el método substring().
     const formatoFecha = (fecha) => {
-        if(fecha == null) return ""
+        if(fecha == null || fecha == "0000-00-00") return ""
         const date = new Date(Date.parse(fecha))
         const formattedDate = date.toISOString().substring(0, 10)
         return formattedDate
